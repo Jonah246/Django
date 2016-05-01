@@ -1,0 +1,16 @@
+{# stores/templates/stores/store_create.html #}
+
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}建立店家 | {{ block.super }}{% endblock title %}
+
+{% block body %}	 
+{{block.super}}
+<div class="container">
+  <form action="" method="post" role="form">
+    {% csrf_token %}
+    {{ form|crispy}}
+    <button type="submit" class="btn btn-primary">建立</button>
+  </form>
+</div>
+{% endblock body %}

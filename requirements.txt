@@ -1,0 +1,4 @@
+Django==1.9.5
+django-crispy-forms==1.6.0
+django-jquery==1.12.2
+gunicorn==19.4.5
